@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' !important ;
+}
+
+body{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.pala{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 50px;
+}
+.pala > .humburger{
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+.pala .menu{
+    list-style: none;
+}
+.pala .menu > li{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.pala .menu > li:not(:last-child){
+    margin-right: 35px;
+}
+.pala a {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.container{
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.1));
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.container #judul{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Cherry Bomb One' !important;
+}
+.container #judul span{
+    font-size: 90px;
+    line-height: 120px;
+    display: block;
+    font-family: 'Cherry Bomb One' !important;
+
+}
+.container ul.social{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%) ;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    font-size: 34px;
+}
+a[target]{
+    color: #fff;
+}
+.fitur{
+    position: fixed;
+    bottom: 0;
+    left: 33%;
+    width: 35%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.1);
+}
